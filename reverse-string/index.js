@@ -2,18 +2,20 @@
 // Given a string, return a new string with the reversed
 // order of characters
 // --- Examples
-//   reverse('apple') === 'leppa'
-//   reverse('hello') === 'olleh'
-//   reverse('Greetings!') === '!sgniteerG'
+  // reverse('apple') === 'leppa'
+  // reverse('hello') === 'olleh'
+  // reverse('Greetings!') === '!sgniteerG'
 
-// simplest solution
-// function reverse(str) {
-//     let splitStr = str.split("").reverse().join("")
 
-//     return splitStr
-// }
+// solution #1 with reverse method
+function reverse(str) {
+    let splitStr = str.split("").reverse().join("")
 
-// without reverse method
+    return splitStr
+}
+
+
+// solution #2 without reverse method
 function reverse(str) {
   // create empty string called 'reversed'
   let reversed = '';
@@ -28,13 +30,13 @@ function reverse(str) {
   return reversed;
 }
 
-// with reduce  *fancy solution*
-// function reverse(str) {
-//     // debugger statement
-//     // debugger;
-//   // take str and turn it into array
-//   // use reduce method to condense down to single string value
-//   return str.split('').reduce((rev, char) => char + rev, '');
-// }
+// solution #3 with reduce method
+function reverse(str) {
+    // debugger statement
+    // debugger;
+  // take str and turn it into array
+  // use reduce method to condense down to single string value
+  return str.split('').reduce((rev, char) => char + rev, '');
+}
 
 console.log(reverse('asdf'));
