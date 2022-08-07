@@ -39,3 +39,7 @@ function vowels(str) {
   // ELSE return 0
   return matches ? matches.length : 0;
 }
+
+console.log(vowels('banana'));
+console.log(vowels('wine'));
+console.log(vowels('sdfg'));
