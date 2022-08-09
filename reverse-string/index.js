@@ -40,3 +40,4 @@ function reverse(str) {
 }
 
 console.log(reverse('asdf'));
+console.log(reverse('chocolate'));
