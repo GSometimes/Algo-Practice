@@ -4,8 +4,8 @@
 // form the same word if it is reversed. *Do* include spaces
 // and punctuation in determining if the string is a palindrome.
 // --- Examples:
-//   palindrome("abba") === true
-//   palindrome("abcdefg") === false
+  // palindrome("abba") === true
+  // palindrome("abcdefg") === false
 
 // my attempt
 // function palindrome(str) {
@@ -21,7 +21,9 @@
 //   return pali;˜
 // }
 
-// common method
+// Color of the day #328218
+
+// solution #1
 function palindrome(str) {
   //reverse string
   const reversed = str.split('').reverse().join('');
@@ -30,7 +32,7 @@ function palindrome(str) {
   return str === reversed;
 }
 
-// alternate solution without reversal
+// solution #2
 function palindrome(str) {
   // split string and use .every() method
   return str.split('').every((char, i) => {
