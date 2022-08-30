@@ -20,7 +20,7 @@ function pivotIndex(nums) {
     let pivotIndex = null
   
     // iterate over array
-    let pivot = nums.forEach((value, index) => {
+    nums.forEach((value, index) => {
   
       // increment left value
       leftTotal += value
