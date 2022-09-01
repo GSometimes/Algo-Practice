@@ -9,7 +9,7 @@ function containsDuplicate(nums) {
   // If the size of the Set equals the length of the
   // nums array then return true otherwise return false
 
-  return new Set(nums).size < nums.length ? true : false;
+  return new Set(nums).size < nums.length;
 }
 
 console.log(containsDuplicate([1, 2, 3, 1])); // true
