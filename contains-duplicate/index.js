@@ -2,14 +2,25 @@
 
 // Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
-function containsDuplicate(nums) {
-  // Set is an object that stores unique values
-  // Check length of Set with .size not .length
-  // Create a new Set with nums array
-  // If the size of the Set equals the length of the
-  // nums array then return true otherwise return false
+// function containsDuplicate(nums) {
+//   // Set is an object that stores unique values
+//   // Check length of Set with .size not .length
+//   // Create a new Set with nums array
+//   // If the size of the Set equals the length of the
+//   // nums array then return true otherwise return false
 
-  return new Set(nums).size < nums.length;
+//   return new Set(nums).size < nums.length;
+// }
+
+function containsDuplicate(nums) {
+  nums.sort();
+
+  for(let num of nums) {
+    if(nums[num] === nums[num - 1]) {
+      return true
+    }
+  }
+  return false
 }
 
 console.log(containsDuplicate([1, 2, 3, 1])); // true
