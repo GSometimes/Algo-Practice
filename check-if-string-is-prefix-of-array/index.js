@@ -22,3 +22,6 @@ function isPrefixString(s, words) {
   // return false
   return false;
 }
+
+console.log(isPrefixString("ilovewine", ['i', 'love', 'wine', 'tomato'])) // true
+console.log(isPrefixString("ilovewine", ['i', 'love', 'tomato', 'wine'])) // false
