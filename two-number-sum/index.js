@@ -16,7 +16,6 @@
 // targetSum => 20
 // returns []
 
-
 function twoNumberSum(array, targetSum) {
   // iterate over the array
   for (const element of array) {
