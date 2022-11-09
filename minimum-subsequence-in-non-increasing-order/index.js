@@ -11,12 +11,10 @@
 function minSubsequence(nums) {
   // sort array from greatest to least
   let sorted = nums.sort((a, b) => b - a);
-
   // define variable for maxSum
   let maxSum = 0;
   // define variable for totalSum
   let totalSum = 0;
-
   // define output array
   let output = [];
 
