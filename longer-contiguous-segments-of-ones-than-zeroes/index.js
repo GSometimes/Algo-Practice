@@ -15,7 +15,8 @@ function checkZeroOnes(s) {
 
   // iterate over input string
   for (const letter in s) {
-    // if the value of current index equals '1' then increment one Counter and set the value of zeroCounter to '0'
+    // if the value of current index equals '1' then increment oneCounter 
+    // and set the value of zeroCounter to '0'
     // else increment the zeroCounter and set the value of oneCounter to '0'
     if (s[letter] === '1') {
       oneCounter++;
