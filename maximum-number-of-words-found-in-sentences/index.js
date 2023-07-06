@@ -28,6 +28,32 @@ function mostWordsFound(sentences) {
   return maxWords;
 }
 
+// time complexity: O(n)
+// space complexity: O(1)
+
+// rewrite using reduce
+function mostWordsFound(sentences) {
+  // return the max number of words in a sentence
+  return sentences.reduce((maxWords, sentence) => {
+    // split sentence into words
+    const words = sentence.split(' ');
+    // define variable for word count
+    const wordCount = words.length;
+
+    // if word count is greater than max words
+    // reassign max words to word count
+    if (wordCount > maxWords) {
+      maxWords = wordCount;
+    }
+
+    // return max words
+    return maxWords;
+  }, 0);
+}
+
+// time complexity: O(n)
+// space complexity: O(1)
+
 console.log(
   mostWordsFound([
     'alice and bob love leetcode',
