@@ -1,0 +1,12 @@
+{
+  "name": "leetcode-75",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec npx ts-node ./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
