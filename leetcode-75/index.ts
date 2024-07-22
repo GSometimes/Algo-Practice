@@ -9,8 +9,8 @@
 // Return names sorted in descending order by the people's heights.
 
 function sortPeople(names: string[], heights: number[]): string[] {
-  // ceate an array of indices based on the heights array
-
+  
+    // ceate an array of indices based on the heights array
   const indices: number[] = heights.map((_, index) => index);
 
   // sort the indices array based on the heights array in descending order
@@ -21,6 +21,7 @@ function sortPeople(names: string[], heights: number[]): string[] {
   // to get the names in descending order based on the heights
   const output: string[] = indices.map((index) => names[index]);
 
+  // return output
   return output;
 }
 
